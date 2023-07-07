@@ -37,6 +37,27 @@ namespace StackAndQueuePracticeProblem
                 temp = temp.next;
             }
         }
+        //Peek:- Will return top value but not delete it 
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            Console.WriteLine(top.data);
+        }
+        //Pop:-will remove the top Element from Stack 
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine(top.data);
+            top = top.next;
+        }
     }
     }
 
