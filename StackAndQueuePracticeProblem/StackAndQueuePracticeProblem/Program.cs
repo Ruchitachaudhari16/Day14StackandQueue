@@ -8,7 +8,7 @@ namespace StackAndQueuePracticeProblem
 {
     public class Program
     {
-        //UC3:- Ability to create a Queue of 56->30->70
+        //UC4:- Ability to dequeue from the beginning
         static void Main(string[] args)
         { 
             /*LinkedListStack linkListStack = new LinkedListStack();
@@ -30,7 +30,12 @@ namespace StackAndQueuePracticeProblem
             queueList.Enqueue(56);
             queueList.Enqueue(30);
             queueList.Enqueue(70);
-            
+
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("Dequeue:-Delete element from Queue");
+            queueList.Dequeue();
+            queueList.Display();
+
 
             Console.ReadLine();
         }
