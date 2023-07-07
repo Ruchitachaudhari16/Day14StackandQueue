@@ -8,12 +8,10 @@ namespace StackAndQueuePracticeProblem
 {
     public class Program
     {
-        //UC1 Ability to create a Stack of 56->30->70
-        //LIFO
-        //56 will be on the top of the stack
+        //UC3:- Ability to create a Queue of 56->30->70
         static void Main(string[] args)
         { 
-            LinkedListStack linkListStack = new LinkedListStack();
+            /*LinkedListStack linkListStack = new LinkedListStack();
             linkListStack.Push(70);
             linkListStack.Push(30);
             linkListStack.Push(56);
@@ -24,7 +22,16 @@ namespace StackAndQueuePracticeProblem
             Console.WriteLine("Pop element from the stack");
             linkListStack.Pop();
             Console.WriteLine("Element in the stack after pop");
-            linkListStack.Display();
+            linkListStack.Display();*/
+
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("enqueue:-Insert element in Queue");
+            QueueList queueList = new QueueList();
+            queueList.Enqueue(56);
+            queueList.Enqueue(30);
+            queueList.Enqueue(70);
+            
+
             Console.ReadLine();
         }
 }
